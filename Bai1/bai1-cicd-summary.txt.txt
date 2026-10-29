@@ -1,0 +1,11 @@
+Repo tên là : Secure-Internal-Developer-Platform-IDP-
+
+Workflow làm : push code lên nhánh main -> Chạy trên Ubuntu-latest -> Set up JDK 21 -> Build với Maven -> SSH vào Sever-> Sever Pull code về -> Khởi chạy Docker Compose -> Chạy curl
+ 
+Pipeline đã chạy qua hết các bước ở trên và chạy được Docker trên VPS 
+
+Em đã verify bằng các lệnh sau : 
++ docker compose ps
++ curl -i http://localhost:8000/api/health
++ docker compose logs --tail=50 backend
+ 

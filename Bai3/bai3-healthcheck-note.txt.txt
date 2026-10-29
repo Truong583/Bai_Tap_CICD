@@ -1,0 +1,12 @@
+Script này giúp cho biết được thông tin người dùng , hệ thống và thời gian hệ thống đã chạy 
+thêm nữa scripts này còn biết Docker container nào đang chạy , xem log để giám sát app và nginx 
+kiểm tra port đang mở và trả về 
+
+Nếu thêm thì e sẽ thêm kiểm tra RAM, CPU và tích hợp thêm cả trong GitHub Action để sau mỗi lần triển khai thì hệ thống tự kiểm tra 
+
+Các lỗi kĩ thuật từ file này : 
+- Lỗi từ container 
+- Lỗi từ Nginx 
+- Lỗi port khi proxypass ở Nginx
+- Kiểm tra xem Docker có đang chạy hay không
+- API Health Check không phản hồi hoặc trả về lỗi HTTP
